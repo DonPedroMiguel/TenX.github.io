@@ -1,0 +1,174 @@
+#loucuragem{
+    background-color: #000;
+
+  }
+
+  .column div {
+      position: relative;
+      float: left;
+      width: auto;
+      height: auto;
+      max-width: 500px;
+      margin: 0 20px 25px 20px;
+      padding: 0;
+  }
+  
+  html{
+      box-sizing: border-box;
+      font-size: 80%;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'sans-serif';
+  
+    }
+
+  *,
+  *::after,
+  *::before{
+      margin: 0;
+      padding: 0;
+      font-family: inherit;
+      box-sizing: inherit;
+  }
+  
+/*----------------------------------------------------------------------------------*/
+  /*PRIMEIRA ANIMAÇÃO*/
+  .intro{
+      position: fixed;
+      top: 0;
+      left: 0;
+      width:100%;
+      height: 100vh;    
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      z-index: 1;
+      background: #000;
+      transition: 1s;
+  }
+  
+  .intro img{
+/*      top: -300px; */
+      position: absolute;
+  }
+  
+  .intro p{
+      color: gray;
+      font-size: 2.6rem;
+     margin-top: 20px;
+  }
+  
+  .logo{
+      font-size: 5.5rem;
+      color: white;
+      margin-top: 300px;
+
+  }
+  
+  .logo-parts{
+      position: relative;
+      display: inline-block;
+      opacity: 0;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+  }
+  
+  .logo-parts.active{
+      bottom: 0;
+      opacity: 1;
+      transition: ease-in-out.5s;
+  }
+  
+  .logo-parts.fade{
+      bottom: 250px;
+      opacity: 0;
+      transition: ease-in-out.5s;
+  }
+/*FIM - PRIMEIRA ANIMAÇÃO*/
+  /*----------------------------------------------------------------------------------------------*/
+ 
+  .content{
+      width: 100%;
+      padding: 50px;
+      font-size: 2rem;
+      top: 0;
+      left: 0;
+      width:100%;
+    /*  height: 100vh; */
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin-top: 8%;
+  }
+  
+  .abacate{
+  color: #000;
+  }
+  
+  .idioma{
+      text-align: center;
+      color: rgb(255, 255, 255);
+      font-family: 'Open Sans', sans-serif;
+      font-size: larger;
+      margin-bottom: 5%;
+  }   
+  
+  .bandeira{
+      width: 100%;
+      height: 100%;
+  }
+  
+  span{
+      color: white;
+      font-family: 'Open Sans', sans-serif;
+  }
+
+/*----------------------------------------------------------------------------------------------*/
+  /* Gray Scale */
+  .hover08 figure img {
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+      -webkit-transition: .3s ease-in-out;
+      transition: .3s ease-in-out;
+  }
+  .hover08 figure:hover img {
+      -webkit-filter: grayscale(0);
+      filter: grayscale(0);
+  }
+  /* FIM - Gray Scale*/
+  
+/*----------------------------------------------------------------------------------------------*/  
+
+  /*HOVER DAS PALAVRAS: "ENGLISH" E "PORTUGUÊS"*/
+  
+  .column div span {
+      position: absolute;
+      align-self: center;
+      bottom: -15px;
+      left: 0;
+      z-index: -1;
+      display: block;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      color: #444;
+      font-size: 18px;
+      text-decoration: none;
+      text-align: center;
+      -webkit-transition: .3s ease-in-out;
+      transition: .3s ease-in-out;
+      opacity: 0;
+  }
+  figure {
+    width: 100%;
+    height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+  }
+  figure:hover+span {
+      bottom: -70px;
+      opacity: 1;
+  }
+
+/*FIM - HOVER DAS PALAVRAS: "ENGLISH" E "PORTUGUÊS"*/
